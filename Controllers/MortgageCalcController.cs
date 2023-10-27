@@ -8,14 +8,23 @@ namespace Guardian_MortgageCalculator.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            
-            return View();
+            LoanDataModel loan = new LoanDataModel() { 
+                MonthlyPayment = 0.0m,
+                TotalInterest = 0.0m,
+                TotalCost = 0.0m,
+                InterestRate = 5.0m,
+                LoanAmount = 25000.00m,
+                Term = 60
+
+            };
+
+            return View(loan);
         }
 
         [HttpPost]
-        public IActionResult Index(LoanDataModel model)
+        public IActionResult Index(LoanDataModel loan)
         {
-            return View(model);
+            return View(loan);
         }
     }
 }

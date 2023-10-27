@@ -9,7 +9,7 @@
         <div class="card mt-3 shadow h-100 border-3">
             <div class="card-body">
                 <h2 class="fw-bold fs-2 text-center">Enter Loan Details</h2>
-                <form action="" method="post" class="" id="rateForm">
+                <form>
                     <div class="form-group m-2">
                         <label asp-for="LoanAmount">Loan Amount:</label>
                         <input asp-for="LoanAmount" placeholder="Loan Amount" min="100" step="100" class="form-control">
@@ -22,8 +22,10 @@
                         <label asp-for="InterestRate">Interest Rate:</label>
                         <input asp-for="InterestRate" placeholder="Interest Rate (APR %)" min="0" step=".1" class="form-control">
                     </div>
-                    <button class="btn btn-primary m-2" type="submit" id="calcBtn" onclick="getValues()">Calculate</button>
-                </form>
+                    <div class="mt-3 text-end">
+                        <button class="btn btn-primary m-2" type="submit" id="btnSubmit">Calculate</button>
+                    </div>
+                </form> 
             </div>
         </div>
     </div>
@@ -31,20 +33,23 @@
         <div class="card mt-3 shadow h-100 border-3">
             <div class="card-body">
                 <div class="text-center m-2">
-                    <h2 class="fw-bold fs-2 text-center"> Your Monthly Payments:</h2>
-                    <h4 class="text-center display-6 text-success" id="monthlyPmt">$0</h4>
+                    <h2 class="fw-bold fs-2 text-center"> Your Monthly Payments: </h2>
+                    <h4 class="text-center display-6 text-success" id="monthlyPmt">$@Model.MonthlyPayment</h4>
                 </div>
-                <div class="gy-2 mt-5">
-                    <h5 class="m-2" id="principle"> Total Principle: $0</h5>
-                    <h5 class="m-2" id="totInterest"> Total Interest: $0</h5>
-                    <h5 class="m-2" id="totCost"> Total Cost: $0</h5>
+                <div class="row row-cols-2 fs-5">
+                    <div class="col" id="principle">Total Principle:</div>
+                    <div class="col text-end">$@Model.LoanAmount</div>
+                    <div class="col" id="totInterest"> Total Interest:</div>
+                    <div class="col text-end">$@Model.TotalInterest</div>
+                    <div class="col" id="totCost"> Total Cost:</div>
+                    <div class="col text-end">$@Model.TotalCost</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="row mt-2">
-    <div class="card mt-3 shadow border-3">
+<div class="row">
+    <div class="card mt-5 shadow border-3">
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-striped border border-dark border-2 mt-2" id="monthlyPmtTable">
