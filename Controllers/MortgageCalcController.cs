@@ -1,4 +1,5 @@
-﻿using Guardian_MortgageCalculator.Models;
+﻿using Guardian_MortgageCalculator.Helpers;
+using Guardian_MortgageCalculator.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Guardian_MortgageCalculator.Controllers
@@ -24,7 +25,11 @@ namespace Guardian_MortgageCalculator.Controllers
         [HttpPost]
         public IActionResult Index(LoanDataModel loan)
         {
-            return View(loan);
+            LoanHelper loanHelper = new LoanHelper();
+            
+            LoanDataModel model = loanHelper.GetLoanData(loan);
+
+            return View(model);
         }
     }
 }
