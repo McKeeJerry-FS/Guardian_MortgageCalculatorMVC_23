@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian_MortgageCalculator", "Guardian_MortgageCalculator.csproj", "{CA15414E-4A6A-4FCC-B9C5-DE545D5C2884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian_MortgageCalculator.Tests", "..\Guardian_MortgageCalculator.Tests\Guardian_MortgageCalculator.Tests.csproj", "{D5A16909-7964-4D8D-BF01-40BC8888693E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA15414E-4A6A-4FCC-B9C5-DE545D5C2884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA15414E-4A6A-4FCC-B9C5-DE545D5C2884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA15414E-4A6A-4FCC-B9C5-DE545D5C2884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA15414E-4A6A-4FCC-B9C5-DE545D5C2884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5A16909-7964-4D8D-BF01-40BC8888693E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A16909-7964-4D8D-BF01-40BC8888693E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A16909-7964-4D8D-BF01-40BC8888693E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A16909-7964-4D8D-BF01-40BC8888693E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E1F17DA-2D7C-4651-97A9-B457EA22A5F4}
+	EndGlobalSection
+EndGlobal
