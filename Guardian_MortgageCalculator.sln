@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian_MortgageCalculator", "Guardian_MortgageCalculator.csproj", "{CA15414E-4A6A-4FCC-B9C5-DE545D5C2884}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guardian_MortgageCalculator.Core", "Guardian_MortgageCalculator.Core.csproj", "{CA15414E-4A6A-4FCC-B9C5-DE545D5C2884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian_MortgageCalculator.Tests", "..\Guardian_MortgageCalculator.Tests\Guardian_MortgageCalculator.Tests.csproj", "{D5A16909-7964-4D8D-BF01-40BC8888693E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guardian_MortgageCalculator.Tests", "..\Guardian_MortgageCalculator.Tests\Guardian_MortgageCalculator.Tests.csproj", "{D5A16909-7964-4D8D-BF01-40BC8888693E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

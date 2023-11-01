@@ -5,13 +5,13 @@ namespace Guardian_MortgageCalculator.Helpers
 {
     public class LoanHelper : ILoanHelper
     {
-        
-        private decimal CalcMonthlyInterest(decimal balance, decimal monthlyRate)
+
+        public decimal CalcMonthlyInterest(decimal balance, decimal monthlyRate)
         {
             return balance * monthlyRate;
         }
 
-        private decimal CalcMonthlyRate(decimal rate)
+        public decimal CalcMonthlyRate(decimal rate)
         {
             return rate / 1200;
         }

@@ -3,7 +3,7 @@
     ViewData["Title"] = "Mortgage Calculator App";
 }
 
-<h1 class="display-2 text-center">Mortgage Calculator</h1>
+<h1 class="display-2 text-center fw-bold">Mortgage Calculator</h1>
 <div class="row row-cols-1 row-cols-md-2 g-2">
     <div class="col">
         <div class="card mt-3 shadow h-100 border-3">
@@ -34,7 +34,7 @@
             <div class="card-body">
                 <div class="text-center m-2">
                     <h2 class="fw-bold fs-2 text-center"> Your Monthly Payments: </h2>
-                    <h4 class="text-center display-6 text-success" id="monthlyPmt">@Model.MonthlyPayment.ToString("C")</h4>
+                    <h4 class="text-center display-6 text-success fw-bold" id="monthlyPmt">@Model.MonthlyPayment.ToString("C")</h4>
                 </div>
                 <div class="row row-cols-2 fs-5">
                     <div class="col" id="principle">Total Principle:</div>
